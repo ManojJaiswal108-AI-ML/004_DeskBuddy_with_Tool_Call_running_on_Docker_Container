@@ -1,0 +1,287 @@
+(infused_venv) PS E:\03_DeskBuddy> docker compose up -d --build 
+[+] up 10/10
+ ✔ Image redis:7-alpine Pulled                                                                                                                                                                                                                                                           25.1s
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.33kB done
+#1 DONE 0.0s
+
+#2 [agent internal] load build definition from Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 236B 0.1s done
+#2 DONE 0.2s
+
+#3 [tools internal] load build definition from Dockerfile
+#3 transferring dockerfile: 236B 0.0s done
+#3 DONE 0.2s
+
+#4 [agent internal] load metadata for docker.io/library/python:3.12-slim
+#4 ...
+
+#5 [auth] library/python:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#4 [agent internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 3.4s
+
+#6 [tools internal] load .dockerignore
+#6 transferring context: 2B 0.0s done
+#6 DONE 0.1s
+
+#7 [agent internal] load .dockerignore
+#7 transferring context: 2B 0.0s done
+#7 DONE 0.2s
+
+#8 [tools 1/5] FROM docker.io/library/python:3.12-slim@sha256:2259debdc6af85626058a15a7bf44ad6a68b8c98c9ae82a02cf5cdb92f096d47
+#8 resolve docker.io/library/python:3.12-slim@sha256:2259debdc6af85626058a15a7bf44ad6a68b8c98c9ae82a02cf5cdb92f096d47
+#8 ...
+
+#9 [tools internal] load build context
+#9 transferring context: 1.54kB 0.0s done
+#9 DONE 0.2s
+
+#10 [agent internal] load build context
+#10 transferring context: 4.93kB 0.0s done
+#10 DONE 0.2s
+
+#8 [tools 1/5] FROM docker.io/library/python:3.12-slim@sha256:2259debdc6af85626058a15a7bf44ad6a68b8c98c9ae82a02cf5cdb92f096d47
+#8 resolve docker.io/library/python:3.12-slim@sha256:2259debdc6af85626058a15a7bf44ad6a68b8c98c9ae82a02cf5cdb92f096d47 0.2s done
+#8 sha256:5c397e4307db7bd392eff1d36de88b04da2a137a4b906b7e0e4657bada560645 0B / 249B 0.2s
+#8 sha256:5c397e4307db7bd392eff1d36de88b04da2a137a4b906b7e0e4657bada560645 249B / 249B 0.3s done
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 0B / 12.12MB 0.2s
+#8 sha256:be6443c06d3c9914acdca3ffb368adad23d4f282b55e71e730878ad3e3c3f75c 0B / 1.29MB 0.2s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 0B / 29.84MB 0.2s
+#8 sha256:5c397e4307db7bd392eff1d36de88b04da2a137a4b906b7e0e4657bada560645 249B / 249B 0.3s done
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 1.05MB / 12.12MB 0.8s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 2.10MB / 12.12MB 0.9s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 3.15MB / 12.12MB 1.2s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 4.19MB / 12.12MB 1.5s
+#8 sha256:be6443c06d3c9914acdca3ffb368adad23d4f282b55e71e730878ad3e3c3f75c 1.29MB / 1.29MB 1.4s done
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 5.24MB / 12.12MB 1.8s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 2.10MB / 29.84MB 1.6s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 6.29MB / 12.12MB 2.1s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 4.19MB / 29.84MB 2.1s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 7.34MB / 12.12MB 2.5s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 8.39MB / 12.12MB 3.0s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 6.29MB / 29.84MB 2.8s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 9.44MB / 12.12MB 3.3s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 10.49MB / 12.12MB 3.6s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 8.39MB / 29.84MB 3.4s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 11.53MB / 12.12MB 4.0s
+#8 sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 12.12MB / 12.12MB 4.3s done
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 10.49MB / 29.84MB 4.3s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 12.58MB / 29.84MB 4.8s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 14.68MB / 29.84MB 5.2s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 16.78MB / 29.84MB 5.7s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 18.87MB / 29.84MB 6.3s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 20.97MB / 29.84MB 7.0s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 23.07MB / 29.84MB 7.9s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 25.17MB / 29.84MB 8.5s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 27.26MB / 29.84MB 9.1s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 29.36MB / 29.84MB 9.7s
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 29.84MB / 29.84MB 10.0s done
+#8 sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 29.84MB / 29.84MB 10.0s done
+#8 extracting sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034
+#8 extracting sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 4.8s done
+#8 extracting sha256:be6443c06d3c9914acdca3ffb368adad23d4f282b55e71e730878ad3e3c3f75c
+#8 extracting sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034 4.8s done
+#8 extracting sha256:be6443c06d3c9914acdca3ffb368adad23d4f282b55e71e730878ad3e3c3f75c 0.7s done
+#8 extracting sha256:be6443c06d3c9914acdca3ffb368adad23d4f282b55e71e730878ad3e3c3f75c 0.7s done
+#8 extracting sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7
+#8 extracting sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 2.5s done
+#8 extracting sha256:5c397e4307db7bd392eff1d36de88b04da2a137a4b906b7e0e4657bada560645
+#8 extracting sha256:b524bb3aba7394d85233f3a0a742b8f1b56179e8f61492f73d42a1ff118623b7 2.5s done
+#8 extracting sha256:5c397e4307db7bd392eff1d36de88b04da2a137a4b906b7e0e4657bada560645 0.1s done
+#8 DONE 18.6s
+
+#11 [agent 2/5] WORKDIR /app
+#11 DONE 0.9s
+
+#12 [agent 3/5] COPY requirements.txt .
+#12 ...
+
+#13 [tools 3/5] COPY requirements.txt .
+#13 DONE 0.2s
+
+#12 [agent 3/5] COPY requirements.txt .
+#12 DONE 0.2s
+
+#14 [agent 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#14 7.151 Collecting fastapi==0.115.6 (from -r requirements.txt (line 1))
+#14 7.571   Downloading fastapi-0.115.6-py3-none-any.whl.metadata (27 kB)
+#14 7.770 Collecting uvicorn==0.34.0 (from -r requirements.txt (line 2))
+#14 7.822   Downloading uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+#14 8.230 Collecting openai==1.59.7 (from -r requirements.txt (line 3))
+#14 8.282   Downloading openai-1.59.7-py3-none-any.whl.metadata (27 kB)
+#14 8.447 Collecting redis==5.2.1 (from -r requirements.txt (line 4))
+#14 8.506   Downloading redis-5.2.1-py3-none-any.whl.metadata (9.1 kB)
+#14 8.644 Collecting httpx==0.28.1 (from -r requirements.txt (line 5))
+#14 8.705   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+#14 9.149 Collecting starlette<0.42.0,>=0.40.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#14 9.207   Downloading starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
+#14 ...
+
+#15 [tools 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#15 7.276 Collecting fastapi==0.115.6 (from -r requirements.txt (line 1))
+#15 7.487   Downloading fastapi-0.115.6-py3-none-any.whl.metadata (27 kB)
+#15 7.708 Collecting uvicorn==0.34.0 (from -r requirements.txt (line 2))
+#15 7.744   Downloading uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+#15 7.971 Collecting starlette<0.42.0,>=0.40.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#15 8.014   Downloading starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
+#15 9.004 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#15 9.053   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+#15 9.237 Collecting typing-extensions>=4.8.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#15 9.280   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#15 9.424 Collecting click>=7.0 (from uvicorn==0.34.0->-r requirements.txt (line 2))
+#15 9.466   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#15 9.548 Collecting h11>=0.8 (from uvicorn==0.34.0->-r requirements.txt (line 2))
+#15 9.590   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#15 9.683 Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#15 9.728   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#15 ...
+
+#14 [agent 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#14 10.25 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#14 10.32   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+#14 10.54 Collecting typing-extensions>=4.8.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+#14 10.60   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#14 10.73 Collecting click>=7.0 (from uvicorn==0.34.0->-r requirements.txt (line 2))
+#14 10.79   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#14 10.87 Collecting h11>=0.8 (from uvicorn==0.34.0->-r requirements.txt (line 2))
+#14 10.92   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#14 11.04 Collecting anyio<5,>=3.5.0 (from openai==1.59.7->-r requirements.txt (line 3))
+#14 11.09   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+#14 11.17 Collecting distro<2,>=1.7.0 (from openai==1.59.7->-r requirements.txt (line 3))
+#14 11.23   Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+#14 11.99 Collecting jiter<1,>=0.4.0 (from openai==1.59.7->-r requirements.txt (line 3))
+#14 12.05   Downloading jiter-0.17.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+#14 12.51 Collecting sniffio (from openai==1.59.7->-r requirements.txt (line 3))
+#14 12.57   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+#14 12.78 Collecting tqdm>4 (from openai==1.59.7->-r requirements.txt (line 3))
+#14 12.84   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+#14 13.04 Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 5))
+#14 13.10   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+#14 13.60 Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 5))
+#14 13.65   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#14 13.76 Collecting idna (from httpx==0.28.1->-r requirements.txt (line 5))
+#14 13.82   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#14 13.97 Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#14 14.03   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#14 17.45 Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#14 17.51   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+#14 17.58 Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#14 17.64   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+#14 17.83 Downloading fastapi-0.115.6-py3-none-any.whl (94 kB)
+#14 17.90 Downloading uvicorn-0.34.0-py3-none-any.whl (62 kB)
+#14 17.97 Downloading openai-1.59.7-py3-none-any.whl (454 kB)
+#14 18.11 Downloading redis-5.2.1-py3-none-any.whl (261 kB)
+#14 18.22 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#14 18.28 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#14 18.37 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#14 18.46 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#14 18.54 Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+#14 18.59 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#14 18.66 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#14 18.73 Downloading jiter-0.17.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (345 kB)
+#14 18.86 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+#14 19.04 Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+#14 19.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 6.2 MB/s eta 0:00:00
+#14 19.49 Downloading starlette-0.41.3-py3-none-any.whl (73 kB)
+#14 19.56 Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+#14 19.63 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#14 19.69 Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+#14 19.77 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#14 19.83 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#14 19.89 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#14 20.23 Installing collected packages: typing-extensions, tqdm, sniffio, redis, jiter, idna, h11, distro, click, certifi, annotated-types, uvicorn, typing-inspection, pydantic-core, httpcore, anyio, starlette, pydantic, httpx, openai, fastapi
+#14 ...
+
+#15 [tools 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#15 14.41 Collecting pydantic-core==2.50.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#15 14.45   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+#15 14.53 Collecting typing-inspection>=0.4.4 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.115.6->-r requirements.txt (line 1))
+#15 14.57   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+#15 14.72 Collecting anyio<5,>=3.4.0 (from starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1))
+#15 14.76   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+#15 14.86 Collecting idna>=2.8 (from anyio<5,>=3.4.0->starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1))
+#15 14.89   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#15 14.99 Downloading fastapi-0.115.6-py3-none-any.whl (94 kB)
+#15 15.04 Downloading uvicorn-0.34.0-py3-none-any.whl (62 kB)
+#15 15.09 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#15 15.14 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#15 15.19 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+#15 15.30 Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+#15 15.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 8.4 MB/s eta 0:00:00
+#15 15.62 Downloading starlette-0.41.3-py3-none-any.whl (73 kB)
+#15 15.67 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#15 15.71 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#15 15.76 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#15 15.81 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#15 15.86 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#15 16.04 Installing collected packages: typing-extensions, idna, h11, click, annotated-types, uvicorn, typing-inspection, pydantic-core, anyio, starlette, pydantic, fastapi
+#15 21.19 Successfully installed annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 fastapi-0.115.6 h11-0.16.0 idna-3.20 pydantic-2.14.1 pydantic-core-2.50.1 starlette-0.41.3 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.34.0
+#15 21.20 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#15 21.96 
+#15 21.96 [notice] A new release of pip is available: 25.0.1 -> 26.2.2
+#15 21.96 [notice] To update, run: pip install --upgrade pip
+#15 DONE 22.8s
+
+#16 [tools 5/5] COPY . .
+#16 DONE 0.2s
+
+#14 [agent 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#14 ...
+
+#17 [tools] exporting to image
+#17 exporting layers
+#17 exporting layers 5.9s done
+#17 exporting manifest sha256:d8d3fa96f6685e5b8f428730d885873be0b3fb03285060ab3d9db38c851fe577 0.1s done
+#17 exporting config sha256:8c5988bccad2d0bf209ae67052d750fd7e5dde1d172b4e1f294ecfd60d160b70 0.1s done
+#17 exporting attestation manifest sha256:e56a5f142292612ad6f544b03a4eaa8cefdd16095c4c4e6e4a4f13f0ce5ee7db 0.1s done
+#17 exporting manifest list sha256:ada8fed42ce73e1aa293c13bc30ae467944bdbb971b6b5c59b902df93989da7c
+#17 exporting manifest list sha256:ada8fed42ce73e1aa293c13bc30ae467944bdbb971b6b5c59b902df93989da7c 0.1s done
+#17 naming to docker.io/library/03_deskbuddy-tools:latest 0.0s done
+#17 unpacking to docker.io/library/03_deskbuddy-tools:latest
+#17 ...
+
+#14 [agent 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#14 30.70 Successfully installed annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.19 click-8.5.0 distro-1.9.0 fastapi-0.115.6 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 jiter-0.17.0 openai-1.59.7 pydantic-2.14.1 pydantic-core-2.50.1 redis-5.2.1 sniffio-1.3.1 starlette-0.41.3 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.34.0
+#14 30.70 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#14 31.24 
+#14 31.24 [notice] A new release of pip is available: 25.0.1 -> 26.2.2
+#14 31.24 [notice] To update, run: pip install --upgrade pip
+#14 DONE 32.4s
+
+#17 [tools] exporting to image
+#17 unpacking to docker.io/library/03_deskbuddy-tools:latest 2.9s done
+#17 DONE 9.5s
+
+#18 [agent 5/5] COPY . .
+#18 DONE 0.5s
+
+#19 [agent] exporting to image
+#19 ...
+
+#20 [tools] resolving provenance for metadata file
+#20 DONE 0.1s
+
+#19 [agent] exporting to image
+#19 exporting layers 4.7s done
+#19 exporting manifest sha256:9e0bfbb6e23425f51782a3a7035bc7fc5d24f6bd47a35b5d369638a76575cf50 0.1s done
+#19 exporting config sha256:f75fa15c87c907c467f1d38f737a12a3a87efdc6c40ef8fd6077f03803bb5ba0 0.1s done
+#19 exporting attestation manifest sha256:5344e359fe46b6ed03edfe113c8674bfa537cbedf59bb9ae3b45d2ca7e6f5822 0.1s done
+#19 exporting manifest list sha256:052ba8ef960f50f8b3450db035e53032e23f3137ec4810ef62fa71b2b2340f3a
+#19 exporting manifest list sha256:052ba8ef960f50f8b3450db035e53032e23f3137ec4810ef62fa71b2b2340f3a 0.1s done
+#19 naming to docker.io/library/03_deskbuddy-agent:latest 0.0s done
+#19 unpacking to docker.io/library/03_deskbuddy-agent:latest
+#19 unpacking to docker.io/library/03_deskbuddy-agent:latest 3.5s done
+#19 DONE 8.7s
+
+[+] up 17/17resolving provenance for metadata file
+ ✔ Image redis:7-alpine             Pulled                                                                                                                                                                                                                                               25.1s
+ ✔ Image 03_deskbuddy-agent         Built                                                                                                                                                                                                                                                68.7s
+ ✔ Image 03_deskbuddy-tools         Built                                                                                                                                                                                                                                                68.7s
+ ✔ Network 03_deskbuddy_default     Created                                                                                                                                                                                                                                               0.3s
+ ✔ Volume 03_deskbuddy_agent_memory Created                                                                                                                                                                                                                                               0.0s
+ ✔ Container deskbuddy-tools        Started                                                                                                                                                                                                                                               3.2s
+ ✔ Container deskbuddy-redis        Started                                                                                                                                                                                                                                               3.1s
+ ✔ Container deskbuddy-agent        Started
